@@ -10,7 +10,7 @@ const jump = () => {
 
 
 
-const loop = setInterval (() => ) {}
+const loop = setInterval (() => {}); 
 
 
 
