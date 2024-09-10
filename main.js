@@ -1,5 +1,22 @@
 const mario = document.querySelector(".mario")
 const pipe = document.querySelector(".pipe");
+const startbutton = document.querySelector(".start");
+const gameOverScreen = document.querySelector(".game-over");
+
+let gameStarted = false;
+
+const startGame = () => {
+gameStarted = true;
+
+pipe.style.animation = "pipe-animation 1.5s infinite linear";
+
+startbutton.style.display = "none";
+mario.style.copacity = "1";
+pipe.style.copacity = "1";
+clouds.style.copacity = "1";
+
+}
+
 
 const jump = () => {
     mario.classList.add("jump");
