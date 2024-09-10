@@ -21,13 +21,14 @@ clouds.style.copacity = "1";
 const jump = () => {
     mario.classList.add("jump");
 
-    setTimeout (() =>)
+    setTimeout (() => {
     mario.classList.remove("jump");
+    },500);
 }
 
 
 
-const loop = setInterval (() => {}); 
+const loop = setInterval (() => {; 
 const pipePosition = pipe.offseftleft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace("px","");
 
@@ -44,7 +45,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px","");
 
      clearInterval(loop);
 
-}.10)
+},10);
 
 document.addEventListener("keydown", jump)
 
