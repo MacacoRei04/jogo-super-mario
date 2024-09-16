@@ -1,4 +1,4 @@
-const mario = document.querySelector(".mario")
+const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const nuvem = document.querySelector(".nuvem");
 const startbutton = document.querySelector(".start");
