@@ -57,3 +57,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px","");
 
 document.addEventListener("keydown", jump)
 
+const restartGame = () => {
+
+    window.localition.reload();
+}
