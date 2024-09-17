@@ -19,7 +19,7 @@ pipe.style.animation = "pipe-animation 1.5s infinite linear";
 startbutton.style.display = "none";
 mario.style.copacity = "1";
 pipe.style.copacity = "1";
-clouds.style.copacity = "1";
+nuvem.style.copacity = "1";
 }
 
 const jump = () => {
