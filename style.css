@@ -1,8 +1,8 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing:border-box;
+    }
 
 .game-board {
     width: 100%;
@@ -11,7 +11,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#87ceeb,#e0f6ff);
+    background: linear-gradient(#87ceeb,#e0f6ff );
 }
 
 .pipe, .mario, .nuvem {
@@ -20,41 +20,43 @@
 }
 
 .pipe {
-    position: absolute;
-    bottom: 0;
-    width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+ position: absolute;
+ bottom: 0;
+ width: 80px;
+ animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+ animation: jump 500ms ease-out;
 }
 
 .nuvem {
-    position: absolute;
-    width: 550px;
-    animation: clouds-animation 20s infinite linear;
+  position: absolute;
+  width: 550px;
+  animation: clouds-animation 20s infinite linear;
 }
 
-.button {
+button {
     background: green;
     color: white;
-    font-weightr: bold;
+    font-weight: bold;
     font-size: 1.5rem;
-    ttion: absolute;
+    border: none;
+    padding: 1rem;
+    position: absolute;
     right: 50vw;
     top: 50vh;
     cursor: pointer;
     z-index: 1;
 }
 
-.button:hover {
+button:hover {
     border: 2px solid green;
     background: none;
     color: green;
@@ -64,11 +66,11 @@ button.start {
 display: block;
 }
 
-.score {
+.score { 
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgbga(0, 0, 0, 0, 5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 24px;
     padding: 10px;
@@ -77,14 +79,14 @@ display: block;
 }
 
 .score span {
-    font-weigth: bold;
+    font-weight: bold;
     font-size: 30px;
 }
 
 .game-over {
     width: 100%;
     height: 100vh;
-    background: rgbga(0, 0, 0, 0, 2);
+    background:rgba(0, 0, 0, 0.2);
     display: none;
     align-items: center;
     justify-content: center;
@@ -101,43 +103,44 @@ display: block;
     margin-top: 15rem;
 }
 
-@keyframes piper-animation {
+@keyframes pipe-animation{
     from {
         right: -80px;
     }
+    
     to {
         right: 100%;
     }
-}
+}  
 
-@keyframes .jump {
-    0%
-    bottom: 0;
-}
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
 
-40% {
-    bottom: 180px;
-}
+    40% {
+        bottom: 180px;
+    }
 
-50% {
-    bottom: 180px;
-}
+    50% {
+        bottom: 180px;
+    }
 
-60% {
-    bottom: 180px;
-}
+    60% {
+        bottom: 180px;
+    }
 
-100% {
-    bottom: 0;
+    100% {
+        bottom: 0;
+    }
 }
 
 @keyframes clouds-animation {
     from {
         right: -550px;
     }
-    
+
     to {
         right: 100%;
     }
 }
-
