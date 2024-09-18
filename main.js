@@ -9,6 +9,7 @@ audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
+let score = 
 
 const startGame = () => {
   gameStarted = true;
@@ -34,6 +35,11 @@ const jump = () => {
 }
 }
 
+const updateScore = () => {
+  score += 1;
+  scoreElement.textContent = score;
+}
+  
 const loop = setInterval (() => {
 const pipePosition = pipe.offsetLeft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
